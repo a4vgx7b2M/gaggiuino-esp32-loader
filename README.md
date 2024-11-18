@@ -25,11 +25,11 @@ Detailed information about the ESP-32 partition scheme is available elsewhere. T
 |tempdata|data|spiffs|0xc00000|0x400000|
 
 ## Build
-partitions.csv and pre-compiled binaries are included in [Releases](https://github.com/a4vgx7b2M/gaggia-esp32/releases)
+Skip to "Software Installation" below if you intend to use the pre-compiled binaries available for download from [Releases](https://github.com/a4vgx7b2M/gaggia-esp32/releases)
 
 Below commands are those required to build from source on Linux. Windows will have different commands but will also be able to build from source
 
-To build from source you require an installed and activate esp-idf environment (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/)
+To build from source you require an installed and activate esp-idf environment (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/), as well as partitions.csv downloaded from this repository
 
 ```
 idf.py create-project gaggia-esp32
