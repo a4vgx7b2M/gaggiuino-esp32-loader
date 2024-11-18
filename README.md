@@ -43,9 +43,9 @@ Change the following menuconfig parameters
 ```
 Serial flasher config --> Flash SPI mode --> QIO
 Partition table --> Partition Table --> Custom partition table CSV
+Press Q then Y to exit and save changes
 ```
-
-Exit menuconfig and save changes
+Copy partitions.csv to current directory and build bootloader.bin and partition-table.bin
 
 ```
 cp /path/to/downloads/gaggia-esp32-x.x.x/partitions.csv ./partitions.csv
@@ -82,4 +82,6 @@ Connect screen GPIO18 --> Blackpill A2<br/>
 ## Conclusion
 The screen functions identically to those activated by official suppliers at time of writing (Release v.0e28389). It also works with tested OTA updates including core OTA updates, however I cannot guarantee this will continue to work in future
 
-This software can be installed on any ESP32-8048S043 from Aliexpress, and likely any ESP32-S3 with 16MB flash (required for ui-embedded) and 8MB PSRAM (not tested with <8MB). Combine this with PCBv3 ([PCBWay](https://www.pcbway.com/project/shareproject/GaggiaBoard_V3_6c90dfac.html) or available from multiple 3rd parties) and the WeAct STM32U585CIU6 from AliExpress, and you can have Gen3 software, OTA updates including Core updates, and STM32U585 performance, all without having to order through official suppliers so you can avoid their markups/shipping costs/shipping delays
+This software can be installed on any ESP32-8048S043 from Aliexpress, and likely any ESP32-S3 with 16MB flash (required for ui-embedded) and 8MB PSRAM (not tested with <8MB)
+
+Combine this with PCBv3 ([PCBWay](https://www.pcbway.com/project/shareproject/GaggiaBoard_V3_6c90dfac.html) or available from multiple 3rd parties) and the WeAct STM32U585CIU6 from AliExpress, and you can have Gen3 software, OTA updates including Core updates, and STM32U585 performance, all without having to order through official suppliers so you can avoid their markups/shipping costs/shipping delays
