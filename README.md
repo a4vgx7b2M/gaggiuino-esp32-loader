@@ -1,7 +1,7 @@
 # Gaggia ESP32S3 Bootloader and Partition Table
 Gaggiuino is a modification to a popular coffee machine (Gaggia Classic) which adds multiple improvements over the original machine (https://github.com/Zer0-bit/gaggiuino)
 
-The previous major software version (Gen2) was initially released under a GPLv3 license, then switched to a CC-BY-NC license with all source code available. The most recent release (Gen3) is released under a CC-BY-NC 4.0 license and switched to a distrubution model where only the update binaries are available, and requires purchase of the hardware from an official supplier who will pre-flash the bootloader, partition table, and Gaggiuino software (with flash encryption enabled). The officially released hardware utilises the easily available ESP32-S3 smart display the ESP32-8048S043
+The previous major software version (Gen2) was released under a CC-BY-NC license with all source code available. The most recent release (Gen3) is still released under a CC-BY-NC 4.0 license but switched to a distrubution model where only the update binaries are available, and requires purchase of the hardware from an official supplier who will pre-flash the bootloader, partition table, and Gaggiuino software (with flash encryption enabled). The officially released hardware utilises the easily available ESP32-S3 smart display the ESP32-8048S043
 
 This software allows you to build a compatible bootloader and partition table, meaning you will be able to run the Gen3 software on any ESP32-8048S043 you are able to source (and theoretically on any ESP32-S3 N16R8)
 
