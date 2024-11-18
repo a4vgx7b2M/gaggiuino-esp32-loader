@@ -6,7 +6,7 @@ The previous major software version (Gen2) was initially released under a GPLv3 
 This software allows you to build a compatible bootloader and partition table, meaning you will be able to run the Gen3 software on any ESP32-8048S043 you are able to source (and theoretically on any ESP32-S3 N16R8)
 
 ## Disclaimer
-I do not own the Gaggiuino project and am not affiliated with it in any capacity. The official Gaggiuino github is linked above. This project was simply out of interest and a desire to avoid purchasing from the official suppliers. This project is released in a non-commercial capacity and complies with the Gaggiuino CC-BY-NC 4.0 license
+I do not own the Gaggiuino project and am not affiliated with it in any capacity. The official Gaggiuino GitHub is linked above. This project was simply out of interest and a desire to avoid purchasing from the official suppliers. This project is released in a non-commercial capacity and complies with the Gaggiuino CC-BY-NC 4.0 license
 
 ## Bootloader
 The official Gaggiuino Gen3 bootloader has flash encryption enabled but not secure boot. A simple bootloader without flash encryption enabled functions perfectly with the current software release version (v.0e28389)
