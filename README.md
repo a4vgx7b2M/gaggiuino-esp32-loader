@@ -12,7 +12,7 @@ I do not own the Gaggiuino project and am not affiliated with it in any capacity
 The official Gaggiuino Gen3 bootloader has flash encryption enabled but not secure boot. A simple bootloader without flash encryption enabled functions perfectly with the current software release version (v.0e28389)
 
 ## Partition layout
-Detailed information about ESP-32 partition layouts is available elsewhere. The below partition table allows booting of the officially released binaries and OTA updating of these binaries
+Detailed information about the ESP-32 partition scheme is available elsewhere. The below partition table allows booting of the officially released binaries and OTA updating of these binaries
 
 |Name|Type|SubType|Offset|Size|Flags|
 |----|----|-------|------|----|-----|
