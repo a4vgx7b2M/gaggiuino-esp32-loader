@@ -72,7 +72,7 @@ cd ./toflash
 esptool.py -b 921600 -p /dev/ttyUSB0 write_flash 0 bootloader.bin 0x8000 partition-table.bin 0x10000 ui-embedded.bin 0x810000 ui-web.bin
 ```
 
-Theoretically a headless install also works. Simply download ui-headless.bin and replace ui-embedded.bin with ui-headless.bin above (Note that I have not tested this extensively, other than ensuring it boots and connects to my blackpill u585)
+Theoretically a headless install also works. Simply download ui-headless.bin and replace ui-embedded.bin with ui-headless.bin above (Note that I have not tested this extensively, other flashing ui-headless.bin to an ESP32-S3-WROOM-1 and ensuring it boots and connects to my blackpill u585)
 
 ## Hardware Installation
 Follow Gaggiuino installation guide for your planned setup<br/>
