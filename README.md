@@ -84,4 +84,4 @@ The screen functions identically to those activated by official suppliers at tim
 
 This software can be installed on any ESP32-8048S043 from Aliexpress, and likely any ESP32-S3 with 16MB flash (required for ui-embedded) and 8MB PSRAM (not tested with <8MB)
 
-Combine this with [PCBv3]([https://www.pcbway.com/project/shareproject/GaggiaBoard_V3_6c90dfac.html](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3) (or order from a 3rd party/group buy) and the WeAct STM32U585CIU6 from AliExpress, and you can have Gen3 software, OTA updates including Core updates, and STM32U585 performance, all without having to order through official suppliers so you can avoid their markups/shipping costs/shipping delays
+Combine this with [PCBv3](https://github.com/banoz/CoffeeHat/tree/main/Hardware/GaggiaBoard_V3) (or order from a 3rd party/group buy) and the WeAct STM32U585CIU6 from AliExpress, and you can have Gen3 software, OTA updates including Core updates, and STM32U585 performance, all without having to order through official suppliers so you can avoid their markups/shipping costs/shipping delays
