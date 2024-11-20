@@ -80,7 +80,7 @@ Connect screen GPIO17 --> Blackpill A3<br/>
 Connect screen GPIO18 --> Blackpill A2<br/>
 
 ## Conclusion
-The screen functions identically to those activated by official suppliers at time of writing (Release v.0e28389). It also works with OTA updates (including U585 core updates) as of time of writing, however I cannot guarantee this will continue to work in future
+The screen functions identically to those activated by official suppliers at time of writing (Release v.0e28389). It also works with OTA updates (including U585 core updates), however I cannot guarantee this will continue to work in future
 
 This software can be installed on any ESP32-8048S043 from Aliexpress, and likely any ESP32-S3 with 16MB flash (required for ui-embedded) and 8MB PSRAM (not tested with <8MB)
 
