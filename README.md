@@ -69,7 +69,7 @@ cp ./build/partition_table/partition-table.bin ./toflash/partition-table.bin
 cp /path/to/downloads/ui-embedded.bin ./toflash/ui-embedded.bin
 cp /path/to/downloads/ui-web.bin ./toflash/ui-web.bin
 cd ./toflash
-esptool.py -b 921600 -p /dev/ttyUSB0 write_flash 0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 ui-embedded.bin 0x810000 ui-web.bin
+esptool.py -b 921600 -p /dev/ttyUSB0 write_flash 0 bootloader.bin 0x8000 partition-table.bin 0x10000 ui-embedded.bin 0x810000 ui-web.bin
 ```
 
 Theoretically a headless install also works. Simply download ui-headless.bin and replace ui-embedded.bin with ui-headless.bin above (Note that I have not tested this extensively, other than ensuring it boots and connects to my blackpill u585)
