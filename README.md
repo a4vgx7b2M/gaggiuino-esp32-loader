@@ -25,7 +25,7 @@ Detailed information about the ESP-32 partition scheme is available elsewhere. T
 |tempdata|data|spiffs|0xc00000|0x400000|
 
 ## Build
-Skip to "Software Installation" below if you intend to use the pre-compiled binaries available for download from [Releases](https://github.com/a4vgx7b2M/gaggia-esp32/releases)
+Skip to "Software Installation" below if you intend to use the pre-compiled binaries available for download from [Releases](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases)
 
 Below commands are those required to build from source on Linux. Windows will have different commands but will also be able to build from source
 
@@ -48,7 +48,7 @@ Press Q then Y to exit and save changes
 Copy partitions.csv to current directory and build bootloader.bin and partition-table.bin
 
 ```
-cp /path/to/downloads/gaggia-esp32-x.x.x/partitions.csv ./partitions.csv
+cp /path/to/downloads/gaggiuino-esp32-loader-x.x.x/partitions.csv ./partitions.csv
 idf.py build
 ```
 
