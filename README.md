@@ -42,6 +42,7 @@ Change the following menuconfig parameters
 
 ```
 Serial flasher config --> Flash SPI mode --> QIO
+Serial flasher config --> Flash size --> 16M
 Partition table --> Partition Table --> Custom partition table CSV
 Press Q then Y to exit and save changes
 ```
