@@ -72,6 +72,8 @@ cp /path/to/downloads/ui-web.bin ./toflash/ui-web.bin
 cd ./toflash
 esptool.py -b 921600 -p /dev/ttyUSB0 write_flash 0 bootloader.bin 0x8000 partition-table.bin 0x10000 ui-embedded.bin 0x810000 ui-web.bin
 ```
+If the final command fails for you, you can try with different baud rates. The "-b 921000" portion can be replaced with "-b 460800", "-b 115200", or any other common baud rates (but flashing will be slower than with a baud rate of 921000)
+(921000 baud rate has been reported to fail on MacOS)
 
 Theoretically a headless install also works. Simply download ui-headless.bin and replace ui-embedded.bin with ui-headless.bin above (Note that I have not tested this extensively, other flashing ui-headless.bin to an ESP32-S3-WROOM-1 and ensuring it boots and connects to my blackpill u585)
 
