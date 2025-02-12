@@ -62,6 +62,15 @@ idf.py build
 |ui-embedded.bin|https://github.com/Zer0-bit/gaggiuino/releases|
 |ui-web.bin|https://github.com/Zer0-bit/gaggiuino/releases|
 
+Flashing this software involves flashing firmware to the following offests
+
+|File|Offset|
+|---|-------|
+|bootloader.bin|0x0|
+|partition-table.bin|0x8000|
+|ui-embedded.bin|0x10000|
+|ui-web.bin|0x810000|
+
 We will now copy all 4 of the above .bin files into a single directory, then enter this directory and flash these files. (Note that the below commands assume you are running them directly after building the above files. If you have closed your terminal, you will need to ensure your current terminal is running from the correct folder and you have re-activated your esp-idf environment.)
 
 If you are flashing from the pre-compiled binaries, replace ./build/bootloader/bootloader.bin and ./build/partition_table/partition-table.bin in the below commands with the appropriate paths to the downloaded binaries
