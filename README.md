@@ -88,7 +88,7 @@ Follow Gaggiuino installation guide for your planned setup<br/>
 
 
 ## Headless Intallation
-A headless install also works. All you need is an ESP-32-S3-N16R8, the devkit works and should be easily available on Amazon/Aliexpress/other. Flashing either ui-embedded.bin or ui-headless.bin works, but for simplicity I have flashed ui-embedded.bin as I had some OTA issues with ui-embedded.bin. You can get SD shot history working by wiring the using the following connections:
+A headless install also works. All you need is an ESP-32-S3-N16R8. The devkit works and should be easily available on Amazon/Aliexpress/other. Flashing either ui-embedded.bin or ui-headless.bin works, but for simplicity I have flashed ui-embedded.bin as I had some OTA issues with ui-embedded.bin. You can get SD shot history working by wiring the using the following connections:
 |SD Pin|ESP32-S3 Pin|
 |------|------------|
 |1|+3.3V|
