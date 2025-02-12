@@ -62,7 +62,7 @@ idf.py build
 |ui-embedded.bin|https://github.com/Zer0-bit/gaggiuino/releases|
 |ui-web.bin|https://github.com/Zer0-bit/gaggiuino/releases|
 
-Flashing this software involves flashing firmware to the following offests
+Flashing this software involves flashing firmware to the following offsets
 
 |File|Offset|
 |---|-------|
