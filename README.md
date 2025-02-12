@@ -27,7 +27,7 @@ Detailed information about the overall ESP-32 partition scheme is available else
 ## Build
 Skip to "Software Installation" below if you intend to use the pre-compiled binaries available for download from [Releases](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases)
 
-You will require an installed and activate esp-idf environment [See here for setup details](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/). You will also require the file partitions.csv downloaded from this repository
+You will require an installed and active esp-idf environment [See here for setup details](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/). You will also require the file partitions.csv downloaded from this repository
 
 Run the below commands to build from source on Linux. Windows will have different commands and a different build environment, but will also be able to build these files from source
 
