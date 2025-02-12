@@ -57,8 +57,8 @@ idf.py build
 |You will need:||
 |--------|-----|
 |esptool.py|Should install automatically with esp-idf installation|
-|bootloader.bin|./build/bootloader/bootloader.bin if build from source, or copy from Releases|
-|partition-table.bin|./build/partition_table/partition-table.bin if build from source, or copy from Releases|
+|bootloader.bin|./build/bootloader/bootloader.bin if building from source, or copy from Releases|
+|partition-table.bin|./build/partition_table/partition-table.bin if building from source, or copy from Releases|
 |ui-embedded.bin|https://github.com/Zer0-bit/gaggiuino/releases|
 |ui-web.bin|https://github.com/Zer0-bit/gaggiuino/releases|
 
