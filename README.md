@@ -1,4 +1,4 @@
-# Not yet tested with v.152d91d released on 14/12/25. Most recent release confirmed working is v.0e28389 released on 10/09/2024 - https://github.com/Zer0-bit/gaggiuino/releases/tag/dev-0e28389
+# Not yet tested with v.152d91d released on 14/02/25. Most recent release confirmed working is v.0e28389 released on 10/09/2024 - https://github.com/Zer0-bit/gaggiuino/releases/tag/dev-0e28389
 
 # Gaggiuino ESP32S3 Bootloader and Partition Table
 [Gaggiuino](https://gaggiuino.github.io/) is "a community-driven project to add high-end features to Gaggia Classic espresso machines"
