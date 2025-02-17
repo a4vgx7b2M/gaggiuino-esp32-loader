@@ -1,15 +1,23 @@
-# Not yet tested with v.152d91d released on 14/02/25. I suggest holding off on testing v.152d91d for now. Based on the speed of releasing a new update and the fact that zer0-bit has deleted prior releases, I am suspicious that there is something in the new update intended to cause permanent hardware damage. For safety, I have deleted the precompiled bootloader.bin and partition-table.bin. Test v.152d91d yourselves at your own risk
+# Update
+As of the latest release (v.616ea70), this bootloader and partition table are not compatible. I have made some progress towards fixing this but still need to do some more work before it will function. For now I have uploaded a copy of the most recently working release (v.0e28389). This is uploaded here as opposed to linking to the official Gaggiuino Github because all previous releases were removed from their Github in response to this project. Under the Gaggiuino CC-BY-NC 4.0 license, you are allowed to "reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and produce, reproduce, and Share Adapted Material for NonCommercial purposes only."
 
+## New method
+
+Flash the file gaggiuino_0e28389.bin found in [Releases](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases) to your ESP32-S3. This will flash your bootloader/partition table/ui-embedded/ui-web partitions all in one go. You can also flash those files seperately using the below instructions. Then flash your Blackill U585/F411 with the included files (performance is for U585, others are for F411) 
+
+Command to flash ESP32: esptool.py -b 921600 -p /dev/ttyUSB0 write_flash 0 gaggiuino_0e28389.bin
+
+This screen will function almost completely correctly, however you will not be able to OTA update to v.616ea70 (or presumably any future releases). This Github will be updated once I have more information/hopefully have a fix. For now, it looks like it is not dangerous to attempt to flash v.616ea70, it just won't work
 
 # Gaggiuino ESP32S3 Bootloader and Partition Table
-[Gaggiuino](https://gaggiuino.github.io/) is "a community-driven project to add high-end features to Gaggia Classic espresso machines"
+[Gaggiuino](https://gaggiuino.github.io/) is a project to add high-end features to Gaggia Classic espresso machines
 
-The previous major software version (Gen2) was released under a CC-BY-NC license with all source code available. The most recent release (Gen3) is still released under a CC-BY-NC 4.0 license, but switched to a distrubution model where only the update binaries are available. You are required to purchase the hardware from an official supplier who will pre-flash the bootloader, partition table, and Gaggiuino software (with flash encryption enabled). The officially released hardware utilises an easily available ESP32-S3 smart display, the ESP32-8048S043. There is also a "headless" version which runs on an ESP-32-S3-WROOM-1 mounted on a custom PCB.
+The previous major software version (Gen2) was released under a CC-BY-NC license with all source code available. The most recent release (Gen3) is still released under a CC-BY-NC 4.0 license, but switched to a distrubution model where only the update binaries are available. You are required to purchase the hardware from an official supplier who will pre-flash the bootloader, partition table, and Gaggiuino software (with flash encryption enabled). The officially released hardware utilises an easily available ESP32-S3 smart display, the ESP32-8048S043. There is also a "headless" version which runs on an ESP-32-S3-WROOM-1 mounted on a custom PCB
 
 The only thing preventing you from running the Gaggiuino Gen3 software on an ESP32-S3 purchased from a third party is the pre-flashed bootloader and partition table. This project gives the information and files required to build a compatible bootloader and partition table, allowing this software to be successfully run on any compatible device. (Please note if you are purchasing an ESP32-8048S043, you need to buy the IPS capacitive touch 800*480 version. If you are purchasing an ESP-32-S3 then you need the N16R8 version)
 
 ## Disclaimer
-I do not own the Gaggiuino project and am not affiliated with it in any capacity. The official Gaggiuino GitHub is linked above. This project was simply out of interest and a desire to avoid purchasing from the official suppliers. This project is released in a non-commercial capacity and complies with the Gaggiuino CC-BY-NC 4.0 license
+I do not own the Gaggiuino project and am not affiliated with it in any capacity. The official Gaggiuino GitHub is linked above. All credit for the underlying project goes to zer0-bit/vsparxx and the rest of the Gaggiuino team. This project was simply out of interest and a desire to avoid purchasing from the official suppliers. This project is released in a non-commercial capacity and complies with the Gaggiuino CC-BY-NC 4.0 license
 
 ## Bootloader
 The official Gaggiuino Gen3 bootloader has flash encryption enabled but not secure boot. If a generic bootloader is built, this will allow loading of the publicly available binaries
