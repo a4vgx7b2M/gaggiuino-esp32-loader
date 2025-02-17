@@ -3,7 +3,7 @@ As of the latest release (v.616ea70), this bootloader and partition table are no
 
 ## New method
 
-Flash the file gaggiuino_0e28389.bin found in [Releases](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases) to your ESP32-S3. This will flash your bootloader/partition table/ui-embedded/ui-web partitions all in one go. You can also flash those files seperately using the below instructions. Then flash your Blackill U585/F411 with the included files (performance is for U585, others are for F411) 
+Flash the file gaggiuino_0e28389.bin found in [Releases](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases) to your ESP32-S3-N16R8. This will flash your bootloader/partition table/ui-embedded/ui-web partitions all in one go. You can also flash those files seperately using the below instructions. Then flash your Blackill U585/F411 with the included files (performance is for U585, others are for F411) 
 
 Command to flash ESP32: esptool.py -b 921600 -p /dev/ttyUSB0 write_flash 0 gaggiuino_0e28389.bin
 
