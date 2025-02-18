@@ -9,6 +9,8 @@ Command to flash ESP32: esptool.py -b 921600 -p /dev/ttyUSB0 write_flash 0 gaggi
 
 This screen will function almost completely correctly, however you will not be able to OTA update to v.616ea70 (or presumably any future releases). This Github will be updated once I have more information/hopefully have a fix. For now, it looks like it is not dangerous to attempt to flash v.616ea70, it just won't work
 
+If your screen is non-functional after flashing, then use the web portal and OTA update process to flash ui-embedded2.bin which is also available in the [Releases](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases) section
+
 # Gaggiuino ESP32S3 Bootloader and Partition Table
 [Gaggiuino](https://gaggiuino.github.io/) is a project to add high-end features to Gaggia Classic espresso machines
 
