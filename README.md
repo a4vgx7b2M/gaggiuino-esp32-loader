@@ -14,6 +14,9 @@ You can buy the ESP32-8048S043 from Aliexpress [Here](https://www.aliexpress.com
 ## Disclaimer
 I do not own the Gaggiuino project and am not affiliated with it in any capacity. The official Gaggiuino GitHub is linked above. All credit for the underlying project goes to zer0-bit/vsparxx and the rest of the Gaggiuino team. This project was simply out of interest and a desire to avoid purchasing from the official suppliers. This project is released in a non-commercial capacity and complies with the Gaggiuino CC-BY-NC 4.0 license
 
+## Preparing to install
+If coming from a pre-v.616ea70 release, make sure you OTA update your STM32 with the appropriate binary. I have reuploaded them to this projects "Releases" from the official Github for ease of access and also as an archive (As old files were recently purged from the official Github). 
+
 ## Software Installation
 Download the attached file named gaggiuino_full_v6655d6d.bin
 
