@@ -1,4 +1,6 @@
 # Update
+This information has been superceeded as of v.616ea70. I have only kept this here for reference. Switch to branch "master" for up to date information
+
 As of the latest release (v.616ea70), this bootloader and partition table are not compatible. I have made some progress towards fixing this but still need to do some more work before it will function. For now I have uploaded a copy of the most recently working release (v.0e28389). This is uploaded here as opposed to linking to the official Gaggiuino Github because all previous releases were removed from their Github in response to this project. Under the Gaggiuino CC-BY-NC 4.0 license, you are allowed to "reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and produce, reproduce, and Share Adapted Material for NonCommercial purposes only."
 
 ## New method
