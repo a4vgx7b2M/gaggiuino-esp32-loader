@@ -1,3 +1,6 @@
+## NOT CURRENTLY WORKING. WILL BOOT BUT NOT COMMUNICATE WITH CORE.
+I think it's a UART bootloader issue but looking into it. Let me know if you figure it out
+
 # Gaggiuino Background
 [Gaggiuino](https://gaggiuino.github.io/) is a project to add high-end features to Gaggia Classic espresso machines
 
