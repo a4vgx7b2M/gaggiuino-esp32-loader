@@ -1,6 +1,3 @@
-## NOT CURRENTLY WORKING. WILL BOOT BUT NOT COMMUNICATE WITH CORE.
-I think it's a UART bootloader issue but looking into it. Let me know if you figure it out
-
 # Gaggiuino Background
 [Gaggiuino](https://gaggiuino.github.io/) is a project to add high-end features to Gaggia Classic espresso machines
 
@@ -21,9 +18,15 @@ I do not own the Gaggiuino project and am not affiliated with it in any capacity
 If coming from a pre-v.616ea70 release, make sure you OTA update your STM32 with the appropriate binary. I have reuploaded them to this projects "Releases" from the official Github for ease of access and also as an archive (As old files were recently purged from the official Github). 
 
 ## Software Installation
+**Be warned, there are parts of the binary designed to brick your screen if it doesn't pass the checks. I believe I have bypassed them all, and it works on my own hardware, but if you have a working screen consider if you really need the update.**
+
+**Do not use OTA updates after flashing this. They will not work and may brick the screen**
+
 Download the attached file named gaggiuino_full_v6655d6d.bin
 
 The easiest to flash this is to use a web flashing tool [Like this one](https://web.esphome.io/). (Note that these flashers won't work in a Firefox based browser.)
+
+<ins>Alternative installation method</ins>
 
 The alternative and probably the technically correct method of flashing this file is to use esptool.py. This is installed as part of the ESP-IDF development environment [See here for setup details](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/).
 
