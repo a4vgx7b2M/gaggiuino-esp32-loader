@@ -15,7 +15,7 @@ You can buy the ESP32-8048S043 from Aliexpress [Here](https://www.aliexpress.com
 I do not own the Gaggiuino project and am not affiliated with it in any capacity. The official Gaggiuino GitHub is linked above. All credit for the underlying project goes to zer0-bit/vsparxx and the rest of the Gaggiuino team. This project was simply out of interest and a desire to avoid purchasing from the official suppliers. This project is released in a non-commercial capacity and complies with the Gaggiuino CC-BY-NC 4.0 license
 
 ## Preparing to install
-If coming from a pre-v.616ea70 release, make sure you OTA update your STM32 with the appropriate binary. I have reuploaded them to this projects "Releases" from the official Github for ease of access and also as an archive (As old files were recently purged from the official Github). 
+If coming from a pre-v.616ea70 release, then use the core OTA functionality to update your core to v6655d6d before you use these files to update your screen. This saves you from having to take apart your machine to update your STM32. I have reuploaded the STM32 binaries to this project's "Releases" from the official Github for ease of access and also as an archive (As old files were recently purged from the official Github). 
 
 ## Software Installation
 **Be warned, there are parts of the binary designed to brick your screen if it doesn't pass the checks. I believe I have bypassed them all, and it works on my own hardware, but if you have a working screen consider if you really need the update.**
@@ -45,9 +45,7 @@ Follow Gaggiuino installation guide for your planned setup<br/>
 
 
 ## Headless Intallation
-Information regarding headless will follow. 
-The binaries are now different enough that ui-embedded.bin will not boot on a generic ESP32-S3-N16R8.
-I focused on the screen as this is what I use, but in theory the same approach should work for both. I'll add a headless version soon if it does. 
+Similar to above, but flash gaggiuino_headless_v6655d6d.bin instead. Should work on any ESP32-S3-N16R8 module
 
 
 ## Conclusion
