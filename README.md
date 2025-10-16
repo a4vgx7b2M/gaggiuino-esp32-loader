@@ -27,7 +27,18 @@ I do not own the Gaggiuino project and am not affiliated with it in any capacity
 ## Preparing to install
 If coming from a pre-v.616ea70 release, then use the core OTA functionality to update your core to v6655d6d before you use these files to update your screen. This saves you from having to take apart your machine to update your STM32. I have reuploaded the STM32 binaries to this project's "Releases" from the official Github for ease of access and also as an archive (As old files were recently purged from the official Github). 
 
-## Software Installation
+## Current Install Method (as of [3cbd9ab](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases/tag/v.3cbd9ab) Oct 15 2025)
+Assuming you have updated to 616ea70 as described above, find the the three `bin` files for your machine from the [latest release](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases/tag/v.3cbd9ab)
+
+1. The Core Package (ex. performance-pcb-pca.bin, but refer to the official docs for which flavor you need) 
+2. ui-embeded.bin
+3. ui-web.bin
+
+Then you can upload each bin to the respective uploading at gaggiuino.local on your machine.  Make sure to upload them in the order above (core, embeded, web), waiting for the screen to reboot each time.  You are [following the default install instructions](https://gaggiuino.github.io/#/guides-stm32/mcu-flashing?id=ota-esp32-stm32u585), just with the patched files.
+
+## Legacy Software Installation
+Note: This was relevent for earlier releases, but am including this if folks want to directly upload firmwares
+
 **Be warned, there are parts of the binary designed to brick your screen if it doesn't pass the checks. I believe I have bypassed them all, and it works on my own hardware, but if you have a working screen consider if you really need the update.**
 
 **Do not use OTA updates after flashing this. They will not work and may brick the screen**
