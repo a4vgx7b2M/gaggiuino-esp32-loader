@@ -2,7 +2,7 @@
 
 This project allows the Gaggiuino software to be flased to hardware that is purchased from retailers other from the official suppliers
 
-I have released this as a web flashing utility for ease of use
+I have released this as a web flashing utility for ease of use. If you are coming from an older version of this project you should update using this utility as this will fix bluetooth
 
 Simply click the link below and follow the instructions
 
