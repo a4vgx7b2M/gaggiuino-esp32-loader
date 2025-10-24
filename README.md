@@ -19,11 +19,21 @@ Make sure you buy the "IPS Capacitive touch" version (800*480 pixels), the other
 
 
 ## Updating
-You should only use the web flashing tool listed above the first time you install
+Assuming you have used the web flash utility at least once, you will be able to perform OTA updates moving fowards
 
-To update, just perform the usual OTA update with the [latest patched release](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases/latest)
+Find the the three `bin` files for your machine from the [latest patched release](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases/latest)
 
 Do not use the officially released update binaries as they will break your screen. If this happens you will have to use the web flashing tool again
+
+1. The Core Package (ex. performance-pcb-pca.bin, but refer to the official docs for which flavor you need) 
+2. ui-embeded.bin (for screens) or ui-headless.bin (for headless modules)
+3. ui-web.bin
+
+Then you can upload each bin to the "SETTINGS" tab "OTA Update" section available at [gaggiuino.local](http://gaggiuino.local/)
+
+Make sure to upload them in the order listed above (core, embeded, web), waiting for the screen to reboot each time.
+
+You are [following the default install instructions](https://gaggiuino.github.io/#/guides-stm32/mcu-flashing?id=ota-esp32-stm32u585), just with the patched files.
 
 
 ## Important notice
