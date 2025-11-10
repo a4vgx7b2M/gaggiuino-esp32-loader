@@ -1,8 +1,8 @@
 # Gaggiuino Loader
 
-This project allows the Gaggiuino software to be flased to hardware that is purchased from retailers other from the official suppliers
+This project allows the Gaggiuino software to be flashed to hardware that is purchased from retailers other from the official suppliers
 
-I have released this as a web flashing utility for ease of use. If you are coming from an older version of this project you should update using this utility as this will fix bluetooth
+I have released this as a web flashing utility for ease of use
 
 Simply click the link below and follow the instructions
 
@@ -19,32 +19,25 @@ Make sure you buy the "IPS Capacitive touch" version (800*480 pixels), the other
 
 
 ## Updating
-Assuming you have used the web flash utility at least once, you will be able to perform OTA updates moving fowards
+On your screen or webUI, go to Settings -> Firmware Update -> Update all firmware
 
-Find the the three `bin` files for your machine from the [latest patched release](https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases/latest)
+This will update your core and screen/headless module to the latest patched version
 
-Do not use the officially released update binaries as they will break your screen. If this happens you will have to use the web flashing tool again
+Latest embedded UI and performance core firmware: a06f97fd
 
-1. The Core Package (ex. performance-pcb-pca.bin, but refer to the official docs for which flavor you need) 
-2. ui-embeded.bin (for screens) or ui-headless.bin (for headless modules)
-3. ui-web.bin
+Latest web UI: 2e8c114
 
-Then you can upload each bin to the "SETTINGS" tab "OTA Update" section available at [gaggiuino.local](http://gaggiuino.local/)
-
-Make sure to upload them in the order listed above (core, embeded, web), waiting for the screen to reboot each time.
-
-You are [following the default install instructions](https://gaggiuino.github.io/#/guides-stm32/mcu-flashing?id=ota-esp32-stm32u585), just with the patched files.
-
-
+<br><br><br><br><br><br>
 ## Important notice
 It seems that ChatGPT is telling people to use this software on screens/modules from offical resellers. DO NOT DO THIS.
 
 If you do this your screen/module will no longer boot. This is because the official hardware has encryption keys burned in, and flash encryption enabled at a hardware level. It will not (easily) boot an unencrypted image, which is what is contained in this repository.
 
-If you ask for help through the official Discord, you will (incorrectly) be told that there is no way to "unbrick" your hardware, and if someone attempts to help you by providing these encrypted firmware files they will be banned. 
+~~If you ask for help through the official Discord, you will (incorrectly) be told that there is no way to "unbrick" your hardware, and if someone attempts to help you by providing these encrypted firmware files they will be banned.~~
 
-If you have bricked your official hardware using this repo, you might have a chance for repair if you follow the instructions here https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases/tag/ChatGPTFix
+~~If you have bricked your official hardware using this repo, you might have a chance for repair if you follow the instructions here https://github.com/a4vgx7b2M/gaggiuino-esp32-loader/releases/tag/ChatGPTFix~~
 
+Zer0-bit has now added this functionality to his [web emergency restore tool](https://gaggiuino.github.io/emergency_restore.html). Use this to repair your official hardware if you have accidentally flashed these files to it. 
 
 ## Hardware Installation
 Follow Gaggiuino installation guide for your planned setup<br/>
